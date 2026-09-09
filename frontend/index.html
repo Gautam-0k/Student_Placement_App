@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🎓 Student Placement Predictor</h1>
+        <p>Enter student details to predict placement status.</p>
+
+        <form id="predictionForm">
+
+            <input type="number" id="sl_no" placeholder="Serial Number" required>
+
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+
+            <input type="number" step="0.01" id="ssc_p" placeholder="SSC Percentage" required>
+
+            <select id="ssc_b" required>
+                <option value="">Select SSC Board</option>
+                <option value="Central">Central</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <input type="number" step="0.01" id="hsc_p" placeholder="HSC Percentage" required>
+
+            <select id="hsc_b" required>
+                <option value="">Select HSC Board</option>
+                <option value="Central">Central</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <select id="hsc_s" required>
+                <option value="">Select HSC Stream</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+            </select>
+
+            <input type="number" step="0.01" id="degree_p" placeholder="Degree Percentage" required>
+
+            <select id="degree_t" required>
+                <option value="">Select Degree Type</option>
+                <option value="Sci&Tech">Sci&Tech</option>
+                <option value="Comm&Mgmt">Comm&Mgmt</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <select id="workex" required>
+                <option value="">Work Experience?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <input type="number" step="0.01" id="etest_p" placeholder="E-Test Percentage" required>
+
+            <select id="specialisation" required>
+                <option value="">Select Specialisation</option>
+                <option value="Mkt&Fin">Mkt&Fin</option>
+                <option value="Mkt&HR">Mkt&HR</option>
+            </select>
+
+            <input type="number" step="0.01" id="mba_p" placeholder="MBA Percentage" required>
+
+            <button type="submit">Predict Placement</button>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
